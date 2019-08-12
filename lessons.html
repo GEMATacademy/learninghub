@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lessons</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d6a9634f7a.js"></script>
+        <link rel="icon" href="assets/pythagorastree.png">
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <a href="index.html" class="link-navbar"><img src="assets/logo.png" class="brand"></a>
+            </div>
+            <div class="navbar-item">
+                <a href="index.html" class="link-navbar">Home</a>
+            </div>
+            <div class="navbar-item">
+                <a href="lessons.html" class="link-navbar">Lessons</a>
+            </div>
+            <div class="navbar-item align-end">
+                <a href="aboutus.html" class="link-navbar">About Us</a>
+            </div>
+        </nav>
+        <div class="welcome">
+            <h1>The Learning Quarters</h1>
+            <h2>The three lessons in a convenient place.</h2>
+            <h3>Click one of the buttons to start learning!</h3>
+        </div>
+        <div class="lesson-tabs">
+            <div class="tabbar">
+                <button class="bar-item" onclick="openCity('DecSci')">Decision Science</button>
+                <button class="bar-item" onclick="openCity('DigCom')">Digital Communication</button>
+                <button class="bar-item" onclick="openCity('MatLang')">Language</button>
+              </div>
+              <div id="DecSci" class="info" style="display:none">
+                <button onclick="this.parentElement.style.display='none'"
+                class="close">Close</button>
+                <h2>Decision Science</h2>
+                <p>In this section, you will learn the following:</p>
+                <ul>
+                    <li>
+                        <a href="#game" class="link">Game Theory</a>
+                    </li>
+                    <li>
+                        <a href="#social" class="link">Social Choice</a>
+                    </li>
+                </ul>
+                <div class="" id="game">
+                <h2>Game Theory</h2>
+                    <ul>
+                        <li>
+                            Study of strategic interactions between the players in situations that contains a set of rules and a set of outcomes
+                        </li>
+                        <li>
+                            Consists of a set of players and their own set of actions/moves
+                        </li>
+                        <li>
+                            Each player receives a payoff depending on their actions
+                        </li>
+                    </ul>
+                <h3>Terminologies</h3>
+                <ul>
+                    <li>
+                        <b>Strategy</b> - a sequence of actions
+                    </li>
+                    <li>
+                        <b>Game</b> - any situation that depends on the players and their strategies
+                    </li>
+                    <li>
+                        <b>Players</b> - the decision makers
+                    </li>
+                    <li>
+                        <b>Payoff</b> - what the player recieves depending on their strategy 
+                    </li>
+                </ul>
+                <h3>Classification of Games</h3>
+                <ul>
+                    <li>
+                        <b>Simultaneous vs. Sequential</b>
+                        <ul>
+                            <li>
+                                Simultaneous - each player has one move and is done simultaneously
+                            </li>
+                            <li>
+                                Sequential – players do not move at the same time and they have different actions
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Perfect vs. Imperfect</b>
+                        <ul>
+                            <li>
+                                Perfect – players are informed regarding their decisions
+                            </li>
+                            <li>
+                                Imperfect – players are not informed regarding their decisions
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Complete vs. Incomplete</b>
+                        <ul>
+                            <li>
+                                Complete – strategies, payoffs, player information are known to the players
+                            </li>
+                            <li>
+                                Incomplete - strategies, payoffs, player information are not known to the players
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Normal Game</h3>
+                <p>A representation of a game where the players and their strategies are listed along with their respective payoffs</p>
+                <p>Example: <b>The Prisoner's Dilemma in Normal Form</b> Read the captions below the image to understand what's happening!</p>
+                <p>Let C to be confess, and R to remain silent</p>
+                <img src="assets/infopics/decisionscience/table1.png">
+                <p>If both confess, both will go to jail for 10 years</p>
+                <img src="assets/infopics/decisionscience/table2.png">
+                <p>If one will confess, the player will be sent to jail for 1 year while the other player will be sent to jail for 25 years.</p>
+                <img src="assets/infopics/decisionscience/table3.png">
+                <p>If one will confess, the player will be sent to jail for 1 year while the other player will be sent to jail for 25 years.</p>
+                <img src="assets/infopics/decisionscience/table4.png">
+                <p>If one will confess, the player will be sent to jail for 1 year while the other player will be sent to jail for 25 years.</p>
+                <img src="assets/infopics/decisionscience/table4.png">
+                <p>If both will remain silent, both of the players will be sent to jail for three years.</p>
+                <img src="assets/infopics/decisionscience/table5.png">
+                </div>
+                <div id="social">
+                    <h2>Social Choice Theory</h2>
+                    <p>Combines the different choices and preferences of individuals in a group into a single preference</p>
+                    <h3>Terminologies</h3>
+                    <ul>
+                        <li>
+                            <b>Voting</b> - method used to create decisions in a democratic community
+                        </li>
+                        <li>
+                            <b>Preference Ballot</b> - a voter would use to rank candidates with no ties.
+                            <p><img class="table" src="assets/infopics/decisionscience/social/table1.png"></p>
+                        </li>
+                        <li>
+                            <b>Preference Table</b> - a table showing how many times each possible ballot was submitted
+                            <p>
+                                <img class="" src="assets/infopics/decisionscience/social/table2.png">
+                            </p>
+                        </li>
+                        <li>
+                            <b>Voting Method</b> - mathematical procedure; uses data from the preference table
+                        </li>
+                    </ul>
+                <h3>Fairness Criterion</h3>
+                <p>A mathematical statement on our expectations for a voting system. Should be true according to common sense, but should not always be true in reality</p>
+                <ul>
+                    <li>
+                        <b>Majority Criterion</b> - if a candidate has the majority of first-place votes, candidate should win
+                    </li>
+                    <li>
+                        <b>Condorcet Criterion</b> - in a head-to-head contest, if candidate beats other candidates, candidate is the winner
+                    </li>
+                    <li>
+                        <b>Independence of Irrelevant Alternatives criterion (IIA)</b> -  in a re-election with the same ballots and (some) candidates removed themselves, the candidate that one in the previous election is still the winner
+                    </li>
+                    <li>
+                        <b>Pareto criterion</b> - it is impossible for another candidate to win if voters prefer their primary candidate
+                    </li>
+                    <li>
+                        <b>Monotonicity criterion</b> - the winning candidate would still win in a re-election if the voter’s changes would benefit the winning candidate
+                    </li>
+                </ul>
+                <h3>Some popular voting methods</h3>
+                <h4>Plurality</h4>
+                <ul>
+                    <li>
+                        Simple, widely-used
+                    </li>
+                    <li>
+                        May used a tie-breaker depending on the outcome
+                    </li>
+                    <li>
+                        Candidate with the most first-place votes is the winner
+                    </li>
+                    <li>
+                        Have the <b>most votes</b>
+                    </li>
+                </ul>
+                <h5>Fairness Satisfaction:</h5>
+                <img src="assets/infopics/decisionscience/social/table3.png">
+                <p>Watch the video below for some additional info!</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/4kfwG1GYIVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>Majority</h4>
+                <ul>
+                    <li>
+                        Candidate that receives more than 50% of the first-place votes wins
+                    </li>
+                    <li>
+                        Have the <b>most of the votes</b>
+                    </li>
+                </ul>
+                <p>Examples:</p>
+                <img src="assets/infopics/decisionscience/social/table4.png">
+                <p>1. C is the winner since that candidate have the most of the votes (7 + 4 = 11; more than 50%).</p>
+                <img src="assets/infopics/decisionscience/social/table5.png">
+                <p>2. D has the most votes but cannot be the winner under the majority rules (7 out of 19).</p>
+                <h4>Borda Count</h4>
+                <ul>
+                    <li>
+                        Named after Jean-Charles de Borda (1733-1799)
+                    </li>
+                    <li>
+                        Points are assigned to the ranked candidates
+                    </li>
+                    <li>
+                        <b>Borda score</b> – total points received for each candidate from all voters added; highest Borda score is the winner
+                    </li>
+                    <li>
+                        <b>The Point System:</b>
+                        <p><img src="assets/infopics/decisionscience/social/table6.png"></p>
+                    </li>
+                </ul>
+                <h5>Fairness satisfaction</h5>
+                <p><img src="assets/infopics/decisionscience/social/table7.png">
+                <p>Watch the video below for additional info! It is recommended that you watch this because it can be quite difficult to understand</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vfujywLdW_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>Condorcet Method</h4>
+                <ul>
+                    <li>   
+                        Popularized by Marquis de Condorcet, 18th century
+                    </li>
+                    <li>
+                        The candidate that beats other candidates in a head-to-head basis using the majority rules method is the winner
+                    </li>
+                    <li>
+                        If there are two candidates, majority rules method is only used
+                    </li>
+                    <li>
+                        <b>Condorcet’s voting paradox</b>: this method may not have a winner when there are more than two candidates
+                    </li>
+                </ul>
+                <p>Watch the video below by James Hamblin for additional info and a how-to!</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5RtOCvFqIKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>Runoff Voting or Hare System</h4>
+                <ul>
+                    <li>
+                        Use the plurality method first.
+                    </li>
+                    <li>
+                        A candidate wins when received more than 50% votes.
+                    </li>
+                    <li>
+                        If no candidate received a more than 50% votes, plurality method takes place again with a designated number of the top candidates.
+                    </li>
+                    <li>
+                        This continues until a candidate receives more than 50% of the votes.
+                    </li>
+                </ul>
+                <p>Watch the video below by Mathispower4u to understand more!</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6axH6pcuyhQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <img src="assets/infopics/decisionscience/social/table8.png">
+                <h1>That's about it! Thank you for reading! Information compiled by Nina Yu</h1>
+            </div>
+            <button onclick="this.parentElement.style.display='none'"
+                class="close">Close</button>
+              </div>
+              <div id="DigCom" class="info" style="display:none">
+                <button onclick="this.parentElement.style.display='none'"
+                class="close">Close</button>
+                <h2>Digital Communication</h2>
+                <p>In this section, you will learn the following:</p>
+                <ul>
+                    <li>
+                        <a href="#crypto" class="link">Cryptography</a>
+                    </li>
+                    <li>
+                        <a href="#cipher" class="link">Ciphers</a>
+                    </li>
+                    <li>
+                        <a href="#encrypt" class="link">Encrpytion</a>
+                    </li>
+                    <li>
+                        <a href="#digsi" class="link">Digital Signatures</a>
+                    </li>
+                </ul>
+                <div class="cryptography" id="crypto">
+                    <h3 class="header">Cryptography</h3>
+                    <p>Cryptography refers to the method of protecting information and communications with the use of codes that only those for whom the information is intended can read and process it. 
+                    </p>
+                    <p>
+                    The goal of cryptosystem is to relay the information without anyone else being able to know it.
+                    </p>
+                    <p>
+                        Cryptography concerns itself with four major objectives: 
+                    </p>
+                    <ul>
+                        <li>
+                            <b>Confidentiality</b> - this objective aims to make sure that no third party can read the message intended for someone. 
+                        </li>
+                        <li>
+                            <b>Integrity</b> - this means that the information or message cannot be altered by any third party.
+                        </li>
+                        <li>
+                            <b>Authenticity</b> - both the receiver and sender can confirm each other’s identity and the origin or destination of the information
+                        </li>
+                        <li>
+                            <b>Non-Repudiation</b> - the sender of the message cannot deny at a later stage her intentions in the transmission of the message. 
+                        </li>
+                    </ul>
+                    <p>
+                        Cryptography works this way:
+                    </p>
+                    <ul>
+                        <li>
+                            Plain text (original text) to Ciphertext = the process is called <b>encryption</b>
+                        </li>
+                        <li>
+                            Ciphertext (encrypted message) to plain text = the process is called <b>decryption</b>
+                        </li>
+                    </ul>
+                </div>
+                <div class="" id="cipher">
+                    <h3>Ciphers</h3>
+                    <h4>The Pigpen Cipher</h4>
+                    <p>This kind of cipher uses symbols instead of letters. Instead of replacing each letter with another letter, letters are replaced by symbols. This kind of cipher has been used my many groups like the Freemasons, a secret society in the 18th century. </p>
+                    <img src="assets/infopics/digital com/cipher/pigpen.png" class="infopic">
+                    <p>To <b>encrypt</b>, Replace the letter with the corresponding symbol. The symbols are assigned to a specific letter</p>
+                    <p>To <b>decrypt</b>, replace the symbol with its corresponding letter. </p>
+                    <p>For more information, refer to the video below by <b>Buzzy Martin</b></p>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/s5XRTcLYy40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h4>The Caesar Cipher</h4>
+                    <p>Also known as <b>shift cipher</b>, it is one of the simplest forms of encrypting a message. This is a type of substitution cipher where one letter in the original message or the plain text is replaced  with a letter corresponding to a certain number of letters shifted up or down in the alphabet. </p>
+                    <img src="assets/infopics/digital com/cipher/caesar.png" class="infopic">
+                    <p class="caption">Note that the fourth letter of the alphabet, namely D, is for A and so with the others.</p>
+                    <p></p>
+                    <h4>The Vigenere Cipher</h4>
+                    <p>This cipher is a polyalphabetic substitution or a cipher that is based on substitution using multiple substitution alphabets. The encryption process is done using Vigenere square or Vigenere table. An example of this table is shown below </p>
+                    <img src="assets/infopics/digital com/cipher/vigenere.jpg" class="infopic">
+                    <p class="caption">An example of the table</p>
+                    <p>The Vigenere Cipher is rather difficult to understand. Why not watch some videos by the community to further understand this? The video is provided by <b>Buzzy Martin</b></p>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/UuREH8tJjv4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p>That's it for ciphers! It's like playing a game. If you would like to flex your skills, download the attachment below and play with your friends!</p>
+                <a href="downloadables/digicom/cipherexercise/murder_in_the_mathematics_department_3_Activity .docx"><button class="download">Download Exercise</button></a>
+                <h3 id="encrypt">Encryption</h3>
+                <p>There are two basic techniques of encryption</p>
+                <h4>Symmetric Cryptography</h4>
+                <ul>
+                    <li>
+                        This a type of encryption where there is only one key (secret key). It is used in both encrypting and decrypting electronic messages. This method is different from asymmetric encryption where there is a pair of keys (one public and one private) is used to encrypt and decrypt  messages. 
+                    </li>
+                    <li>
+                        It uses a key that can either be a number, a word or a string of random letters. It is combined with a plain text of a message to change the content in a specific way. The sender and the receiver know the secret key that is used in encrypting and decrypting the messages. 
+                    </li>
+                    <li>
+                        One fallback of this type of encryption is that all parties involved need to change the key to encrypt the message before they can decrypt it.
+                    </li>
+                    <li>
+                        Also known as secret key encryption. 
+                    </li>
+                </ul>
+                <img src="assets/infopics/digital com/cipher/symmetric encryption.png" class="infopic">
+                <p>Watch the video below to understand more! Video by Zariga Tongy</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NK5Z6Oj0YkM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                <h4>Asymmetric Encryption</h4>
+                <ul>
+                    <li>
+                        It is also known as public key cryptography. 
+                    </li>
+                    <li>
+                        It uses two keys to encrypt a plain text. A public key is available for everyone who might want to send a message to a person. The second private key is kept as a secret so that you are the only person to know. 
+                    </li>
+                    <li>
+                        A message that is encrypted using a public key can only be decrypted using private key. A message encrypted by a private key can be decrypted by a public key. 
+                    </li>  
+                </ul>
+                <img src="assets/infopics/digital com/encrypt/afsdf.png" class="infopic">
+                <p>Watch the video below to understand more! Video by Simply Explained - Savjee</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/AQDCe585Lnc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                <h3 id="digsi">Data Signatures</h3>
+                <p>It is a process that makes sure that the contents of the message have not been changed.
+                When you, the server digitally sign a document, you add a one-way encryption of the message content using your own public and private key pair. 
+                The client can still read it but digital signature creates a “signature” that only the server’s public key can decrypt. The client, using you public key can validate the sender as well as the integrity of the message contents. 
+                </p>
+                <h4>How does it all work?</h4>
+                <p>According to InstantSSL:</p>
+                <ul>
+                <p>Consider a scenario where Alice has to digitally sign a file or an email and send it to Bob:
+                    <li>
+                        Alice selects the file to be digitally signed or clicks on 'sign' in her email application
+                    </li>
+                    <li>
+                        The hash value of the file content or the message is calculated by Alice's computer
+                    </li>
+                    <li>
+                        This hash value is encrypted with Alice's Signing Key (which is a Private Key) to create the Digital Signature.
+                    </li>
+                    <li>
+                        Now, the original file or email message along with its Digital Signature are sent to Bob.
+                    </li>
+                </ul>
+                <ul>
+                <p>After Bob receives the signed message, the associated application (such as email application) identifies that the message has been signed. Bob's computer then proceeds to:</p>
+                <li>
+                    Decrypt the Digital Signature using Alice's Public Key
+                </li>
+                <li>
+                    Calculate the hash of the original message
+                </li>
+                <li>
+                    Compare the (a) hash it has computed from the received message with the (b) decrypted hash received with Alice's message.
+                </li>
+                <li>
+                    Any difference in the hash values would reveal tampering of the message.
+                </li>
+                </ul>
+                <img src="assets/infopics/digital com/hash.png" class="infopic">
+                <p>Due to the complexity of the topic, we hand-picked some videos that would help you learn the topic!</p>
+                <p>This first video is by the folks over at Adobe!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/j8qYJcRcsYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                <p>The second video is by a YouTube Channel known as Sunny Classroom!</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TmA2QWSLSPg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+                <h4>For some exercises, press this button!</h4>
+                <a href="https://quizlet.com/208501821/symmetric-and-asymmetric-encryption-flash-cards/"><button class="download" target="_blank">Exercise</button></a>
+                <h1>Thats about it! Information compiled by Alicia Dela Rosa</h1>
+                <button onclick="this.parentElement.style.display='none'"
+                class="close">Close</button>
+              </div>
+              <div id="MatLang" class="info" style="display:none">
+                <button onclick="this.parentElement.style.display='none'"
+                class="close">Close</button>
+                <h2>Mathematics as a Language</h2>
+                <p>In this section, you will learn the following:</p>
+                <ul>
+                    <li>
+                         <a href="#propcal" class="link">Propositional Calculus </a>
+                    </li>
+                    <li>
+                        <a href="#propcal2" class="link">Forms of Compound proposition </a>
+                    </li>
+                </ul>
+                <p>When we talk about the aspects of math, we always think of number-based problems and problem solving. But clearing things out, numbers are just symbols that we use in identifying a quantity of a particular scenario. We can say that Mathematics is a Language for quantifying objects in order to predict or conclude the right amount we want to have. Although Mathematics of Language started on the stages of quantifying, this evolved in predicting, estimation, observation, deduction of patterns, and many more which gives us humans better opportunity in quantifying results. To put it this way, us humans use math as a daily basis in life for quantifying and we do not realize that Mathematics covers a lot more of what we do in our daily lives and one which is using Mathematics. as a Language</p>
+                <h3>Definition of Language</h3>
+                <p>But before we delve deeper into Mathematics of Language let us talk about what the meaning of Language is and how can it will be considered as a language. When we say ​<b>Language</b>​, it is a <b>​systematic</b>​ means of communicating by the use of sounds or <b>conventional symbols</b>​. It is the code we use to ​<b>express</b>​ ourselves and <b>​communicate</b>​ with others. Moreover, we cannot just say that any sound can be a language, language also has components in order to be considered as a language</p>
+                <h3>Components of Language</h3>
+                <p>The following components are the basis of consideration in labelling sounds and symbols as a language:</p>
+                <ul>
+                    <li>
+                        <b>Vocabulary of symbols or words</b>​ - The language should be rich in words and symbols in order to express more feelings and opinions. 
+                    </li>
+                    <li>
+                        <b>Grammar or rules of how these symbols are used</b> ​- The language should have a systematic and organized way of expressing its words and symbols
+                    </li>
+                    <li>
+                       <b> Community of people who use and understand these symbols</b> ​- The language should also be used by a lot of people in order to understand one another 
+                    </li>
+                    <li>
+                        <b>Range of meanings that can be communicated with these symbols ​- The language can be used in diverse communications (informal, formal, persuasive, & etc.) </b>
+                    </li> 
+                </ul>
+                <p>These components are found in the English Language we use as our international language but what we do not know is that these components are also found in <b>​Mathematics of Language​</b>.</p>
+                <h3>Elements of Mathematics of Language</h3>
+                <p>In order to further understand our knowledge towards​ Mathematics of Language​, Here are the elements that we would be using in order to achieve this kind of language. </p>
+                <ul>
+                    <li>
+                        <b>Numerals​</b>: ​1234567890​ - variables used for quantifying
+                    </li>
+                    <li>
+                        <b>Operations​: ​±×÷∞=≠~<≥≤∓≅≡∀ √ ∜∪ ∩</b> ​ - variables used for operating actions 
+                    </li>
+                    <li>
+                        <b>Expressions​: ​∅ % ∃ ∄ ∈ ∋α β γ δ ε ϵ θ ϑ π μ ρ σ τ φ ω</b> - variables used in identifying                          what kind of expression is the given solution (statistical, geometry, trigonometry,           arithmetic, algebra, etc.) 
+                    </li>
+                </ul>
+                <p>Watch the video below by English Lessons with Adam!</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1ia0LARVYT8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="" id="propcal">
+                    <h3>Propositional Calculus</h3>
+                    <p>Before we start this lesson, you may be wondering on how we jumped from Mathematics of Language to Calculus. Do not worry. in Mathematics, the term "Calculus" is used to express a particular method or system of calculation or reasoning. Just to clarify, we are still delving towards Mathematics as a Language, not with Mathematical equations</p>
+                    <h4>Definition of Propositional Calculus</h4>
+                    <p>Have you ever heard of ​Propositional Calculus? I can guarantee that you are here to understand more of it or just simply bumped on this topic in our website. Even if you have not heard of this topic before in math, you are actually applying this in your daily activities in life. Let me expound it for you, ​Propositional Calculus ​is a method in Mathematics of wherein we identify whether the propositions/statements are considered TRUE or FALSE. When we talk about ​Propositions​, these are complete declarative sentences that are either TRUE or FALSE, but not both. Meaning, that these statements can never be a question or a command.</p>
+                    <h5>Examples</h5>
+                    <p>President Obama is a former president of the United States of America - TRUE </p>
+                    <p>1 + 1 = 2 - TRUE ​(Numerical Form of proposition)</p>
+                    <p>2 + 2 = 5 - FALSE</p>
+                    <p>Now let us try to identify whether the statements are considered propositions or not </p>
+                    <p>Are you going home later? - Not proposition ​(question form) </p>
+                    <p>Bring this home for me. - Not proposition ​(command form)</p>
+                    <p>X + 1 = 2 - Not proposition ​(both true or false) </p>
+                    <p>X + Y = Z - Not proposition ​(both true or false)</p>
+                    <p>In terms of ​Mathematics of Language​, we would be denoting all propositions with capital letters of the English Alphabet (But most of the time we use ​P,Q,R,S, and T​). </p>
+                    <h4>Connectives and Compound Prepositions</h4>
+                    <p>One type of operation we used in ​Propositional Calculus is the ​Propositional Connective wherein we combine two propositions to yield a new proposition whose truth value depends only on the truth values of the two original propositions. Wherein the combination of two propositions may result to a one new proposition that is either TRUE or FALSE and we call this combined propositions due to connective proposition as ​Compound Proposition. </p>
+                    <h5>Operations</h5>
+                    <p>The following below are the operations used in ​Propositional Connectives​ in order to create Compound propositions</p>
+                    <img src="assets/infopics/language/table1.png" class="infopic">
+                    <p>To further understand the operations from Table 2, here are some ​supplementary videos​ that you can access online for free on how to use the following operations above</p>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/1CGMyKwGQ5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="caption">In-depth introduction to Propositional Connectives </p>
+                    <iframe  class="video" width="560" height="315" src="https://www.youtube.com/embed/itrXYg41-V0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="caption">Discussion of Operations for Propositional Connectives </p>
+                    <iframe width="560" class="video" height="315" src="https://www.youtube.com/embed/UiGu57JzLkE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p class="caption">Discussion of Truth Table </p>
+                    <h4>Supplementary Materials and Worksheets </h4>
+                    <p>To help you in understanding propositional calculus, here are some worksheets and reviewers that you can access to evaluate and assist your knowledge about this topic</p>
+                    <a href="http://www.uobabylon.edu.iq/eprints/publication_1_14413_388.pdf​"><button class="download">Download Exercise about PropCal</button></a>
+                    <a href="http://disi.unitn.it/~ldkr/ml2014/ExercisesBooklet.pdf​​"><button class="download">Download Exercise booklet about PropCal</button></a>
+                </div>
+                <div id="propcal2">
+                    <h3>Forms of Compound propositio</h3>
+                    <p>Compound proposition discussed on the last subunit is considered to be a combined propositions (two or more) due to Propositional Connective. Moreover, there are certain situations that even compound propositions are put together by a connective proposition to form a newer compound proposition. In certain circumstances, the newly formed connective proposition can result into three(3) forms and the following are; </p>
+                    <ul>
+                        <li>
+                            <b>Tautology</b> - Always TRUE/All truth values are TRUE under all circumstances 
+                        </li>
+                        <li>
+                            <b>Contradiction</b> - Always FALSE/All truth values are FALSE under all circumstance
+                        </li>
+                        <li>
+                            <b>Contingency</b> - Neither TRUE or FALSE/ All truth values vary (TRUTH or FALSE) under              all circumstances 
+                        </li>
+                    </ul>
+                    <p>Just to clarify about the forms of Compound proposition, this always apply to any kinds of compound propositions that are subjected to Propositional Connective (whether the first execution until the last execution)</p>
+                    <p> To further understand the forms of Compound proposition, here are some ​supplementary videos​ that you can access online for free on determining what form of Compound proposition is present from a given propositional problem: </p>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vzCww-PRug4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p></p>
+                    <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/uvtmQv2SDAA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <button onclick="this.parentElement.style.display='none'"
+                class="close">Close</button>
+              </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-container-1">
+                <img src="assets/logo.png" class="logo-footer">
+            <div class="footer-content">
+                <h4>
+                    GEMATacademy is a fictional organization created for the final group project in GEMATMW under Dr. Francis John Campena
+                </h4>
+                <ul>
+                    <h3>Group Members</h3>
+                    <li>
+                        Arceo, Rafael Gabriel B. - Web Developer and Designer
+                    </li>
+                    <li>
+                        Dela Rosa, Alicia
+                    </li>
+                    <li>
+                        Gonzales, LJ
+                    </li>
+                    <li>
+                        Yu, Nina
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </footer>
+    <script>
+    function openCity(cityName) {
+    var i;
+    var x = document.getElementsByClassName("city");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    document.getElementById(cityName).style.display = "block"; 
+    }</script>
+    </body>
+</html>
